@@ -88,3 +88,4 @@ The auth package is licensed under the GNU GPL license. Please see the LICENSE f
 ## Good practices
 - Never store the password of the user
 - Never send the password from the client to the server and prefer to get it hashed 500-5000 times before it reaches your server with a secure algorithm such as sha512
+- Use the token system (do not use Login() every time!)
