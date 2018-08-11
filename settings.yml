@@ -1,0 +1,6 @@
+randomlevel: 1
+debuglevel: 1
+checkip: false
+accountsfile: "accounts.yml"
+logsfile: "logs.log"
+tokenvalidity: 604800
