@@ -4,6 +4,7 @@ import (
 	cryptoRand "crypto/rand"
 	"encoding/base64"
 	"io"
+	"log"
 	mathRand "math/rand"
 	"time"
 )
@@ -24,7 +25,7 @@ func getRandomString(size int) string {
 		b := make([]byte, size)
 		_, err := io.ReadFull(cryptoRand.Reader, b[:])
 		if err != nil {
-			panic(err)
+			log.Fatal(err)
 		}
 		return base64.StdEncoding.EncodeToString((b))
 	}
