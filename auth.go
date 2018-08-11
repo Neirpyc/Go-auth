@@ -7,7 +7,7 @@ import (
 )
 
 //Creates a new accounts with the given username and password
-func register(username string, password string) error {
+func Register(username string, password string) error {
 	//Logs if necessray
 	if Settings.DebugLevel >= 1 {
 		log.Println("Registering", username, "width password", password)
@@ -42,7 +42,7 @@ func register(username string, password string) error {
 //returns a token for a user with a given username and password and ip if you
 //have set CheckIp in the config file to true, otherwise use "" or "0.0.0.0" as
 //ip
-func login(username string, password string, ip string) (Token, error) {
+func Login(username string, password string, ip string) (Token, error) {
 	if Settings.DebugLevel >= 1 {
 		log.Println("Logging", username, "width password", password, "on ip", ip)
 	}
@@ -83,7 +83,7 @@ func login(username string, password string, ip string) (Token, error) {
 //returns true or false depending on wether a token is valid for a user
 //and it's ip if you have set CheckIp in the config file to true, otherwise use
 //"" or "0.0.0.0" as ip
-func validateToken(username string, ip string, token string) (bool, error) {
+func ValidateToken(username string, ip string, token string) (bool, error) {
 	if Settings.DebugLevel >= 1 {
 		log.Println("Validating", token, "with username", username, "and ip", ip)
 	}
