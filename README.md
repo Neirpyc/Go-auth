@@ -1,4 +1,8 @@
 # Authentication system with golang
+## Disclaimer
+I mostly made this project to learn about password handling and authentication. You should not use this for anything that should be secure: using a real authentication system such as [oauth2](https://github.com/golang/oauth2).
+I guess this code is secure, but I'm not a security expert, and anyways, using a real database solution will be much faster and efficient.
+
 ## Introduction
 The auth package allows you to easily create and store usernames and password without a database. It uses tokens so the password hasn't to be stored on the client side and uses hash with salt so it remains safe even with leaks.
 
@@ -8,7 +12,7 @@ To install go-auth, run:
 go get gopkg.in/yaml.v2
 go get github.com/Neirpyc/Go-auth
 ```
-This package requires [go-yaml](https://github.com/go-yaml/yaml) so it can read the config file and store the accounts a a yaml file.
+This package requires [go-yaml](https://github.com/go-yaml/yaml) so it can read the config file and store the accounts as a yaml file.
 ## Setup
 Once you're in your project file, just create these files (you can rename them as you want, but you'll have to modify some stuff later):
  - logs.log
