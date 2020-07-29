@@ -2,7 +2,7 @@
 ## Introduction
 The auth package allows you to easily create and store usernames and password without a database. It uses tokens so the password hasn't to be stored on the client side and uses hash with salt so it remains safe even with leaks.
 
-##Installation
+## Installation
 To install go-auth, run:
 ```
 go get gopkg.in/yaml.v2
