@@ -1,6 +1,6 @@
 # Authentication system with golang
 ## Disclaimer
-I mostly made this project to learn about password handling and authentication. You should not use this for anything that should be secure: using a real authentication system such as [oauth2](https://github.com/golang/oauth2).
+I mostly made this project to learn about password handling and authentication. You should not use this for anything that should be secure: use a real authentication system such as [oauth2](https://github.com/golang/oauth2).
 I guess this code is secure, but I'm not a security expert, and anyways, using a real database solution will be much faster and efficient.
 
 ## Introduction
